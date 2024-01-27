@@ -76,6 +76,8 @@ I'll probably get around to actually start coding a prototype over the next week
 
 If you have feedback or suggestions about any of this, feel free to open an [issue](https://github.com/toebeann/Quitter/issues) or [pull request](https://github.com/toebeann/Quitter/pulls). I only ask that you please be respectful.
 
+PS. I'm pretty sure the main menu scene name for SN1 and BZ isn't `"MainMenu"`, but that seems like a sensible default for a universal plugin. We can always just ship a .cfg with it set to whatever is appropriate for SN1/BZ anyways, or whatever.
+
 ## Footnotes
 
 ### <sup>[†]</sup> Is there a better way?
