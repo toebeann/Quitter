@@ -76,7 +76,9 @@ I'll probably get around to actually start coding a prototype over the next week
 
 If you have feedback or suggestions about any of this, feel free to open an [issue](https://github.com/toebeann/Quitter/issues) or [pull request](https://github.com/toebeann/Quitter/pulls). I only ask that you please be respectful.
 
-## <sup>[†]</sup> Is there a better way?
+## Footnotes
+
+### <sup>[†]</sup> Is there a better way?
 In a perfect world, mods wouldn't get released without their developers testing and fixing every single edge case, including what happens when a user returns to the main menu and then starts a new game/loads a save. Unfortunately, we are not in such a utopia. This plugin will ideally help to raise developer awareness so that more mods might get released which _do_ consider these edge cases, but more realistically, devs will instead prioritise more important things (like making their mods work at all, and eating snacks), and who can blame them?
 
 It's worth mentioning that I also considered making a system where devs can flag their mods as supporting this kind of edge case (without any additional dependencies for the mod), and then having the plugin auto-quit/prompt to quit only when mods which do not flag support are found installed, which would help to raise developer awareness of the issue and _potentially_ lead to mods addressing these edge cases, but this approach raises some concerns:
