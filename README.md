@@ -2,7 +2,7 @@
 A configurable, universal BepInEx 5 plugin to quit the game when returning to the main menu, for games where not doing so causes a world of hurt for devs and users alike.
 
 ## Why would I want this?
-Modding is hard. Unity games modded with BepInEx often weren't _meant_ to be modded in this way, and often it is challenging for mods to properly clean up after themselves when the user returns to the main menu. Situations like these can cause all kinds of bugs if a user doesn't realise the issue, up to and including permanently corrupting save files! Quitter is one way<sup><small>[[†]](#-is-there-a-better-way)</small></sup> to avoid these issues.
+Modding can be a pain sometimes. Unity games modded with BepInEx often weren't _meant_ to be modded in this way, and often it is challenging for mods to properly clean up after themselves when the user returns to the main menu. Situations like these can cause all kinds of bugs if a user doesn't realise the issue, up to and including permanently corrupting save files! Quitter is one way<sup><small>[[†]](#-is-there-a-better-way)</small></sup> to avoid these issues.
 
 ## Modes
 - **Auto Quit**: Automatically quits the game when returning to the main menu after a skippable countdown, which is rendered on-screen. Can be cancelled!
