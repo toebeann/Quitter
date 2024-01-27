@@ -50,7 +50,7 @@ The rendered Remind Me info bar will include:
 - a button to display more info about _why_ it is a good idea to quit the game, and
 - a button to dismiss the bar
 
-The Remind Me info bar will display permanently until either dismissed manually or the game is quit.
+The Remind Me info bar will display persistently until either dismissed manually or the game is quit.
 
 ## Configuration
 Configurable with Configuration Manager, or by hand-editing the .cfg:
