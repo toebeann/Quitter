@@ -16,15 +16,28 @@ It relies on Unity's built-in `SceneManager` events to monitor when a scene with
 Some details about how each mode operates:
 
 ### Remind Me
-Quitter renders a persistent Reminder info bar near the top of the screen letting the user know that they should quit the game.
+When the event is fired for the configured scene name:
+
+#### Configured threshold NOT yet met
+Quitter will do nothing.
+
+#### Configured threshold HAS been met/exceeded
+Quitter will display a prompt in the middle of the screen with a notice letting the user know that they should quit the game.
+
+The rendered Remind Me warning prompt will include:
+- a message informing the user that they should quit the game ASAP, explaining why,
+- a button to quit immediately (with an option to enable Auto Quit mode for next time if applicable), and
+- a button to dismiss the warning and continue playing at user's own risk.
+
+If the user dismisses the warning, Quitter will then render a persistent Reminder info bar near the top of the screen.
 
 The rendered Remind Me info bar will include:
-- a messge reminding the user that they should quit the game ASAP,
-- a button to quit (which will prompt to confirm, and offer to enable Auto Quit mode via checkbox),
-- a button to display more info about _why_ it is a good idea to quit the game, and
-- a button to dismiss the bar
+- a message reminding the user that they should quit the game ASAP,
+- a button to quit (which will prompt to confirm, and offer to enable Auto Quit mode for next time if applicable via checkbox),
+- a button to display more info about why they should quit (which will simply reopen the Remind Me warning prompt), and
+- a button to dismiss the info bar.
 
-The Remind Me info bar will display persistently until either dismissed manually or the game is quit.
+The Remind Me info bar will display persistently until dismissed.
 
 ### Auto Quit
 When the event is fired for the configured scene name:
@@ -36,7 +49,7 @@ The rendered Auto Quit info bar will include:
 - a message letting the user know the game will automatically quit after it is triggered `X` more times,
 - a button to disable Auto Quit by switching to Remind Me mode instead - when activated the bar will instead show info about how the user has switched to Remind Me mode with a button to undo,
 - a button to display more info about _why_ it is a good idea to quit the game after returning to the main menu, and
-- a button to dismiss the bar
+- a button to dismiss the info bar.
 
 The Auto Quit info bar will automatically dismiss itself after a short period of inactivity.
 
@@ -51,7 +64,7 @@ The rendered Auto Quit countdown prompt will include:
 - a button to skip the countdown and quit immediately, and
 - a button to cancel, preventing the automatic quit and dismissing the prompt.
 
-If Auto Quit is cancelled, Quitter will revert to displaying [the Auto Quit info bar](#configured-threshod-not-yet-met).
+If Auto Quit is cancelled, Quitter will display [the Remind Me info bar](#configured-threshold-has-been-metexceeded) and [the Auto Quit info bar](#configured-threshold-not-yet-met-1) simultaneously, as Auto Quit will kick in again the next time the user returns to the main menu, but it is still advised the user quits ASAP.
 
 ## Configuration
 Configurable with Configuration Manager, or by hand-editing the .cfg:
