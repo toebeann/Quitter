@@ -72,8 +72,6 @@ Yeah, that's because this is currently just me brainstorming a proposal for how 
 
 My plan is to build a prototype to see how it feels, and once we've got something we like, it'll likely be released standalone at least to begin with. Depending on how people feel it may eventually be added to the BepInEx packs for SN1 and BZ.
 
-I'll probably get around to actually start coding a prototype over the next week or so.
-
 If you have feedback or suggestions about any of this, feel free to open an [issue](https://github.com/toebeann/Quitter/issues) or [pull request](https://github.com/toebeann/Quitter/pulls). I only ask that you please be respectful.
 
 PS. I'm pretty sure the main menu scene name for SN1 and BZ isn't `"MainMenu"`, but that seems like a sensible default for a universal plugin. We can always just ship a .cfg with it set to whatever is appropriate for SN1/BZ anyways, or whatever.
