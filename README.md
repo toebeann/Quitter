@@ -20,7 +20,7 @@ Quitter renders a persistent Reminder info bar near the top of the screen lettin
 
 The rendered Remind Me info bar will include:
 - a messge reminding the user that they should quit the game ASAP,
-- a button to quit immediately,
+- a button to quit (which will prompt to confirm, and offer to enable Auto Quit mode via checkbox),
 - a button to display more info about _why_ it is a good idea to quit the game, and
 - a button to dismiss the bar
 
