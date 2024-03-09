@@ -58,7 +58,7 @@ Configurable with Configuration Manager, or by hand-editing the .cfg:
 | Option | Default | Description |
 | --- | --- | --- |
 | **General.Enabled** | `true` | Whether Quitter is active at all. Disabling at runtime will unhook all events and dismiss any currently rendering notices. Re-enabling at runtime will rehook all events, with internal variables reset. |
-| **General.Mode** | `AutoQuit` | The Quitter mode to operate under. Either `AutoQuit` or `RemindMe`. |
+| **General.Mode** | `RemindMe` | The Quitter mode to operate under. Either `AutoQuit` or `RemindMe`. |
 | **Trigger.SceneName** | `"MainMenu"` | The name of the game scene which should trigger Quitter. |
 | **Trigger.SceneEvent** | `activeSceneChanged` | The event of Unity's `SceneManager` which should trigger Quitter. A combination of `activeSceneChanged`, `sceneLoaded` and `sceneUnloaded`. |
 | **Trigger.SceneMode** | `Single \| Additive` | The Unity `LoadSceneMode`(s) which should trigger Quitter. A combination of `Single` and `Additive`. |
