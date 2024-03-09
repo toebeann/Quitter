@@ -74,7 +74,7 @@ My plan is to build a prototype to see how it feels, and once we've got somethin
 
 If you have feedback or suggestions about any of this, feel free to open an [issue](https://github.com/toebeann/Quitter/issues) or [pull request](https://github.com/toebeann/Quitter/pulls). I only ask that you please be respectful.
 
-PS. I'm pretty sure the main menu scene name for SN1 and BZ isn't `"MainMenu"`, but that seems like a sensible default for a universal plugin. We can always just ship a .cfg with it set to whatever is appropriate for SN1/BZ anyways, or whatever.
+PS. I'm aware the main menu scene name for SN1 and BZ isn't `"MainMenu"`, but that seems like a sensible default for a universal plugin. When shipping it for a specific game you can just ship it with a preconfigured .cfg file.
 
 ## Footnotes
 
