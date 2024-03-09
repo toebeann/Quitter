@@ -15,6 +15,17 @@ It relies on Unity's built-in `SceneManager` events to monitor when a scene with
 
 Some details about how each mode operates:
 
+### Remind Me
+Quitter renders a persistent Reminder info bar near the top of the screen letting the user know that they should quit the game.
+
+The rendered Remind Me info bar will include:
+- a messge reminding the user that they should quit the game ASAP,
+- a button to quit immediately,
+- a button to display more info about _why_ it is a good idea to quit the game, and
+- a button to dismiss the bar
+
+The Remind Me info bar will display persistently until either dismissed manually or the game is quit.
+
 ### Auto Quit
 When the event is fired for the configured scene name:
 
@@ -41,17 +52,6 @@ The rendered Auto Quit countdown prompt will include:
 - a button to cancel, preventing the automatic quit and dismissing the prompt.
 
 If Auto Quit is cancelled, Quitter will revert to displaying [the Auto Quit info bar](#configured-threshod-not-yet-met).
-
-### Remind Me
-Quitter renders a persistent Reminder info bar near the top of the screen letting the user know that they should quit the game.
-
-The rendered Remind Me info bar will include:
-- a messge reminding the user that they should quit the game ASAP,
-- a button to quit immediately,
-- a button to display more info about _why_ it is a good idea to quit the game, and
-- a button to dismiss the bar
-
-The Remind Me info bar will display persistently until either dismissed manually or the game is quit.
 
 ## Configuration
 Configurable with Configuration Manager, or by hand-editing the .cfg:
