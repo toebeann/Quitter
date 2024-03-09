@@ -6,7 +6,7 @@ Modding can be a pain sometimes. Unity games modded with BepInEx often weren't _
 
 ## Modes
 
-- **Remind Me** (default): Displays a dismissible alert reminding you to quit the game after returning to the main menu.
+- **Remind Me** (default): Displays a dismissible alert reminding you to quit the game after returning to the main menu, informing you why you should.
 
 - **Auto Quit**: Automatically quits the game when returning to the main menu after a skippable countdown, which is rendered on-screen. Can be cancelled!
 
